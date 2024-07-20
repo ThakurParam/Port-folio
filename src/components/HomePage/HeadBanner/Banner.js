@@ -13,15 +13,16 @@ export default function Banner() {
               textAlign: "center",
               mx: "auto",
               fontWeight: 600,
-              fontSize: "120px",
-              lineHeight: "100px",
+              fontSize: { md: "120px", xs: "40px" },
+              lineHeight: { md: "100px", xs: "40px" },
             },
             ".typo-sub": {
-              position: "absolute",
+              position: { md: "absolute", xs: "initial" },
               right: 50,
               bottom: 5,
-              fontSize: "15px",
-              lineHeight: "20px",
+              fontSize: { md: "15px", xs: "10px" },
+              lineHeight: { md: "20px", xs: "12px" },
+              textAlign: { md: "initial", xs: "center" },
             },
           }}
         >
@@ -37,7 +38,7 @@ export default function Banner() {
           <Typography
             variant="p"
             component={"p"}
-            width={"24%"}
+            width={{ md: "24%", xs: "100%" }}
             className="typo-sub"
           >
             CREATIVE THINKING AND PROBLEM SOLVING ARE WHERE MY MIND

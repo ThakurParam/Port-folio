@@ -8,35 +8,41 @@ export default function Header() {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        p: 2,
+        p: { md: 2, xs: 0 },
+        py: { md: 0, xs: 2 },
+        // position: "sticky",
         ".button": {
           textTransform: "none",
           outline: "none",
           color: "white",
-          border: "1px solid white",
+          border: "2px solid white",
           borderRadius: 8,
-          fontSize: "12px",
+          fontSize: { md: "12px", xs: "7px" },
           fontFamily: "Montserrat",
         },
         ".btn": {
           color: "whitesmoke",
           textTransform: "none",
-          fontSize: "14px",
-          mx: 4,
+          fontSize: { md: "14px", xs: "10px" },
+          mx: { md: 4, xs: 0 },
           borderRadius: 8,
-          px: 2,
+          px: { md: 2, xs: 1 },
+        },
+        ".name": {
+          fontSize: { md: "30px", xs: "15px" },
         },
       }}
     >
       <Typography
-        variant="h5"
-        component={"h5"}
+        variant="p"
+        component={"p"}
         fontFamily={"Montserrat"}
         fontWeight={500}
+        className="name"
       >
         Paramjeet S.
       </Typography>
-      <Box>
+      <Box display={"flex"} alignItems={"center"}>
         <Button className="btn">PROJECTS</Button>
         <Button className="btn">ABOUT</Button>
       </Box>

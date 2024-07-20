@@ -22,7 +22,7 @@ export default function ConnectMe() {
               fontWeight: 600,
               fontFamily: "Montserrat",
               // maxWidth: "10%",
-              fontSize: "25px",
+              fontSize: { md: "25px", xs: "13px" },
               textAlign: "center",
               zIndex: 10,
               lineHeight: "20px",
@@ -31,7 +31,7 @@ export default function ConnectMe() {
               fontWeight: 600,
               fontFamily: "Montserrat",
               // maxWidth: "40%",
-              fontSize: "80px",
+              fontSize: { md: "80px", xs: "30px" },
               textAlign: "center",
               zIndex: 10,
             },
@@ -73,11 +73,15 @@ export default function ConnectMe() {
           ".typo": {
             fontWeight: 600,
             fontFamily: "Montserrat",
-            fontSize: "14px",
+            fontSize: { md: "14px", xs: "10px" },
           },
         }}
       >
-        <Typography variant="p" className="typo">
+        <Typography
+          variant="p"
+          className="typo"
+          display={{ md: "flex", xs: "none" }}
+        >
           FEEL FREE TO CONNECT ME ON SOCIAL MEDIA
         </Typography>
         <Typography variant="p" className="typo">

@@ -14,15 +14,15 @@ export default function IntroBanner() {
           ".btn": {
             color: "whitesmoke",
             textTransform: "none",
-            fontSize: "14px",
-            mx: 4,
+            fontSize: { md: "14px", xs: "10px" },
+            mx: { md: 4, xs: 0 },
             borderRadius: 8,
             px: 2,
           },
           ".btn-contact": {
             color: "whitesmoke",
             textTransform: "none",
-            fontSize: "14px",
+            fontSize: { md: "14px", xs: "10px" },
           },
         }}
       >

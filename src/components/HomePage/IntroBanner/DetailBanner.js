@@ -19,7 +19,7 @@ export default function DetailBanner() {
         <Grid item xs={12} md={3}>
           <Box
             sx={{
-              pt: "20%",
+              pt: { md: "20%", xs: 0 },
               ".typo-sub": {
                 fontSize: "15px",
                 lineHeight: "10px",
