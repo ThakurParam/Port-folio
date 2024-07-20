@@ -1,7 +1,12 @@
+"use client";
+import { ArrowOutward } from "@mui/icons-material";
 import { Box, Stack, Typography } from "@mui/material";
-import React from "react";
+import Link from "next/link";
+import React, { useState } from "react";
 
 export default function ConnectMe() {
+  const [hover, setHover] = useState(false);
+
   return (
     <Box>
       <Box
@@ -57,10 +62,16 @@ export default function ConnectMe() {
                 mx: "auto",
                 mt: 4,
               }}
+              onMouseEnter={() => setHover(true)}
+              onMouseLeave={() => setHover(false)}
             >
-              <Typography variant="p" width={"50%"} textAlign={"center"}>
-                Write Message
-              </Typography>
+              {hover ? (
+                <ArrowOutward fontSize="large" /> // Replace with the actual icon you want to use
+              ) : (
+                <Typography variant="body1" width={"50%"} textAlign={"center"}>
+                  Write Message
+                </Typography>
+              )}
             </Box>
           </Stack>
         </Box>
@@ -84,9 +95,15 @@ export default function ConnectMe() {
         >
           FEEL FREE TO CONNECT ME ON SOCIAL MEDIA
         </Typography>
-        <Typography variant="p" className="typo">
-          INSTAGRAM
-        </Typography>
+        <Link
+          href="https://www.instagram.com/_dead_guruu_/"
+          target="_blank"
+          underline="none"
+        >
+          <Typography variant="p" className="typo">
+            INSTAGRAM
+          </Typography>
+        </Link>
         <Typography variant="p" className="typo">
           LINKEDIN
         </Typography>

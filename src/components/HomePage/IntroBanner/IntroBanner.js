@@ -1,4 +1,5 @@
 import { Box, Button, Divider, Typography } from "@mui/material";
+import Link from "next/link";
 import React from "react";
 
 export default function IntroBanner() {
@@ -31,8 +32,14 @@ export default function IntroBanner() {
         </Button>
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <Button className="btn-contact">LINKEDIN</Button>/
-          <Button className="btn-contact">INSTAGRAM</Button>/
-          <Button className="btn-contact">TWITTER</Button>/
+          <Link
+            href="https://www.instagram.com/_dead_guruu_/"
+            target="_blank"
+            underline="none"
+          >
+            <Button className="btn-contact">INSTAGRAM</Button>
+          </Link>
+          /<Button className="btn-contact">TWITTER</Button>/
           <Button className="btn-contact">EMAIL</Button>
         </Box>
       </Box>
