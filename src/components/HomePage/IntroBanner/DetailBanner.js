@@ -37,7 +37,7 @@ export default function DetailBanner() {
             sx={{
               position: "relative",
               width: "100%",
-              height: 700,
+              height: { md: 700, xs: 400 },
               borderRadius: "40px",
               overflow: "hidden",
             }}
@@ -61,8 +61,8 @@ export default function DetailBanner() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                my: "60%",
-                mx: "20%",
+                my: { md: "60%", xs: "30%" },
+                mx: { md: "20%", xs: "auto" },
               }}
             >
               <Stack>
@@ -81,7 +81,7 @@ export default function DetailBanner() {
       <Box
         sx={{
           position: "absolute",
-          bottom: -80,
+          bottom: { md: -80, xs: 250 },
           left: 0,
           width: "100%",
           height: "150px",
