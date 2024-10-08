@@ -3,16 +3,18 @@ import Main from "./HomePage/HeadBanner/Main";
 import { Box, Container } from "@mui/material";
 import MainFile from "./HomePage/IntroBanner/MainFile";
 import Capabilities from "./HomePage/Capabilities";
-import Contact from "./HomePage/Contact";
+import Contact from "../../assets/Contact";
+import Layout from "../../assets/Layout";
 
 export default function Portfolio() {
   return (
     <Box>
       <Container maxWidth="xl">
-        <Main />
-        <MainFile />
-        <Capabilities />
-        <Contact />
+        <Layout>
+          <Main />
+          <MainFile />
+          <Capabilities />
+        </Layout>
       </Container>
     </Box>
   );

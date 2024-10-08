@@ -31,7 +31,14 @@ export default function IntroBanner() {
           ABOUT
         </Button>
         <Box sx={{ display: "flex", alignItems: "center" }}>
-          <Button className="btn-contact">LINKEDIN</Button>/
+          <Link
+            href="https://www.linkedin.com/in/paramjeet-singh-9328bb2a5/"
+            target="_blank"
+            underline="none"
+          >
+            <Button className="btn-contact">LINKEDIN</Button>
+          </Link>
+          /
           <Link
             href="https://www.instagram.com/_dead_guruu_/"
             target="_blank"

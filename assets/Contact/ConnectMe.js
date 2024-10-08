@@ -8,7 +8,7 @@ export default function ConnectMe() {
   const [hover, setHover] = useState(false);
 
   return (
-    <Box>
+    <Box sx={{ mb: 3 }}>
       <Box
         sx={{
           height: 600,
@@ -104,9 +104,15 @@ export default function ConnectMe() {
             INSTAGRAM
           </Typography>
         </Link>
-        <Typography variant="p" className="typo">
-          LINKEDIN
-        </Typography>
+        <Link
+          href="https://www.linkedin.com/in/paramjeet-singh-9328bb2a5/"
+          target="_blank"
+          underline="none"
+        >
+          <Typography variant="p" className="typo">
+            LINKEDIN
+          </Typography>
+        </Link>
         <Typography variant="p" className="typo">
           TWITTER
         </Typography>

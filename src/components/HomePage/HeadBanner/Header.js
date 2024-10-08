@@ -1,4 +1,5 @@
 import { Box, Button, Typography } from "@mui/material";
+import Link from "next/link";
 import React from "react";
 
 export default function Header() {
@@ -44,7 +45,9 @@ export default function Header() {
       </Typography>
       <Box display={"flex"} alignItems={"center"}>
         <Button className="btn">PROJECTS</Button>
-        <Button className="btn">ABOUT</Button>
+        <Link href={"/about"}>
+          <Button className="btn">ABOUT</Button>
+        </Link>
       </Box>
       <Button variant="outlined" className="button">
         Avialable for Work{" "}
