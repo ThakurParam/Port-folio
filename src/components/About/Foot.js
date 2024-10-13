@@ -11,7 +11,8 @@ export default function Foot() {
       <Container
         maxWidth="xl"
         sx={{
-          mt: 7,
+          mt: 20,
+          height: 500,
         }}
       >
         <Box
