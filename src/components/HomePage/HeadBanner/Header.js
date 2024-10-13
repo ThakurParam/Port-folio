@@ -44,7 +44,9 @@ export default function Header() {
         Paramjeet S.
       </Typography>
       <Box display={"flex"} alignItems={"center"}>
-        <Button className="btn">PROJECTS</Button>
+        <Link href={"/my-projects"}>
+          <Button className="btn">PROJECTS</Button>
+        </Link>
         <Link href={"/about"}>
           <Button className="btn">ABOUT</Button>
         </Link>
