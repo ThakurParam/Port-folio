@@ -34,15 +34,17 @@ export default function Header() {
         },
       }}
     >
-      <Typography
-        variant="p"
-        component={"p"}
-        fontFamily={"Montserrat"}
-        fontWeight={500}
-        className="name"
-      >
-        Paramjeet S.
-      </Typography>
+      <Link href={"/"}>
+        <Typography
+          variant="p"
+          component={"p"}
+          fontFamily={"Montserrat"}
+          fontWeight={500}
+          className="name"
+        >
+          Paramjeet S.
+        </Typography>
+      </Link>
       <Box display={"flex"} alignItems={"center"}>
         <Link href={"/my-projects"}>
           <Button className="btn">PROJECTS</Button>
