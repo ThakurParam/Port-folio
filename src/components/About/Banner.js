@@ -16,8 +16,8 @@ export default function Banner() {
         />
         <Box width={"26%"}>
           <Typography variant="p" sx={{ wordSpacing: "-2px" }}>
-            THE DESIGNER'S ROLE IS LIKE A CONSIDERATE HOST WHO ANTICIPATES THEIR
-            GUEST'S NEEDS.
+            THE DESIGNER&apos;S ROLE IS LIKE A CONSIDERATE HOST WHO ANTICIPATES
+            THEIR GUEST&apos;S NEEDS.
           </Typography>
         </Box>
         <Typography

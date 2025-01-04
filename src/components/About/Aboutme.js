@@ -19,10 +19,10 @@ export default function Aboutme() {
                   component={"h5"}
                   fontFamily={"Montserrat"}
                 >
-                  Hello, my name's Paramjeet Singh, I'm a bay-area born designer
-                  based in Northern Uttar Pradesh. I’m currently at Quantmhill
-                  as a designer creating connected brands, commerce, product,
-                  and web experiences.
+                  Hello, my name&apos;s Paramjeet Singh. I&apos;m a Bay
+                  Area-born designer based in Northern Uttar Pradesh. I&apos;m
+                  currently at Quantmhill as a designer creating connected
+                  brands, commerce, product, and web experiences.
                 </Typography>
                 <Typography
                   variant="h4"
@@ -30,8 +30,9 @@ export default function Aboutme() {
                   mt={2}
                   fontFamily={"Montserrat"}
                 >
-                  When I’m not designing, I enjoy Travelling, top fragging in
-                  Valorant, and continuing my quest to find the best fast Food
+                  When I&apos;m not designing, I enjoy Travelling, top fragging
+                  in Valorant, and continuing my quest to find the best fast
+                  Food
                 </Typography>
               </Box>
             </Grid>

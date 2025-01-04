@@ -27,7 +27,7 @@ export default function Foot() {
               {" "}
               Got a Project in Mind?
             </Typography>
-            <Typography variant="h1"> Let's Connect</Typography>
+            <Typography variant="h1"> Let&apos;s Connect</Typography>
             <Box
               sx={{
                 height: 120,
