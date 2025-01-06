@@ -10,7 +10,7 @@ export default function Header() {
         justifyContent: "space-between",
         alignItems: "center",
         p: { md: 2, xs: 0 },
-        py: { md: 0, xs: 2 },
+        py: { md: 0, xs: 0 },
         // position: "sticky",
         ".button": {
           textTransform: "none",
@@ -20,6 +20,10 @@ export default function Header() {
           borderRadius: 8,
           fontSize: { md: "12px", xs: "7px" },
           fontFamily: "Montserrat",
+          "&:hover": {
+            bgcolor: "white",
+            color: "black",
+          },
         },
         ".btn": {
           color: "whitesmoke",

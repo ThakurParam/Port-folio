@@ -9,13 +9,13 @@ import Layout from "../../assets/Layout";
 export default function Portfolio() {
   return (
     <Box>
-      <Container maxWidth="xl">
-        <Layout>
-          <Main />
-          <MainFile />
-          <Capabilities />
-        </Layout>
-      </Container>
+      {/* <Container maxWidth="xl"> */}
+      <Layout>
+        <Main />
+        <MainFile />
+        <Capabilities />
+      </Layout>
+      {/* </Container> */}
     </Box>
   );
 }
