@@ -53,9 +53,11 @@ export default function Header() {
           <Button className="btn">ABOUT</Button>
         </Link>
       </Box>
-      <Button variant="outlined" className="button">
-        Avialable for Work{" "}
-      </Button>
+      <Link href={"/contact"}>
+        <Button variant="outlined" className="button">
+          Avialable for Work{" "}
+        </Button>
+      </Link>
     </Box>
   );
 }
