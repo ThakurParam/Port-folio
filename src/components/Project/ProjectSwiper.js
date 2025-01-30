@@ -13,38 +13,38 @@ import { LaunchOutlined } from "@mui/icons-material";
 import Link from "next/link";
 const Data = [
   {
-    img: "/1.png",
+    img: "/letlogo.svg",
     tittle: "Let's Trip",
     description:
       "Lets Trip takes the stress out of planning, allowing you to focus on what truly matters—making memories. Experience the future of travel with Lets Trip,",
     link: "https://www.letstrip.world/",
   },
   {
-    img: "/2.png",
+    img: "/logo.png",
     tittle: "Siripay",
     description:
       "SiriPay is an online platform that makes it easy to purchase coupons and gift cards for you and your loved ones. It serves as a one-stop-shop for rewards,",
     link: "https://www.siripay.co/",
   },
   {
-    img: "/3.png",
+    img: "/peeaar.svg",
     tittle: "PEE-AAR",
     description:
-      "Lets Trip takes the stress out of planning, allowing you to focus on what truly matters—making memories. Experience the future of travel with Lets Trip,",
+      "At Peeaarr, we bridge the gap between businesses and buyers. Display your firm’s data, highlight your products, and provide seamless consultation for smarter purchases.",
     link: "https://www.peeaarr.com/",
   },
   {
-    img: "/3.png",
+    img: "/rajuu.png",
     tittle: "Raju666",
     description:
-      "Lets Trip takes the stress out of planning, allowing you to focus on what truly matters—making memories. Experience the future of travel with Lets Trip,",
+      "At Raju666, we bring you a seamless and engaging betting experience. Bet with confidence, enjoy real-time action, and chase the jackpot like never before!",
     link: "https://www.raju666.com/",
   },
   {
-    img: "/3.png",
+    img: "/pp.webp",
     tittle: "PPLACD",
     description:
-      "Lets Trip takes the stress out of planning, allowing you to focus on what truly matters—making memories. Experience the future of travel with Lets Trip,",
+      "Pplacd is the ultimate platform where candidates, coaches, and employers connect. Employers find top talent, candidates discover expert coaches, and coaches sell their services—all in one seamless ecosystem.",
     link: "https://staging.girnarsoft.com/",
   },
 ];
@@ -76,17 +76,20 @@ export default function ProjectSwiper() {
                   width: "100%",
                   borderRadius: "50px",
                   overflow: "hidden",
+                  justifyContent: "center",
+                  alignItems: "center",
                   "&:hover .overlay": {
                     transform: "translateY(0)",
                   },
+                  display: "flex",
                 }}
               >
                 <img
                   src={item?.img}
                   alt="Project"
                   style={{
-                    height: "100%",
-                    width: "100%",
+                    height: "40%",
+                    width: "40%",
                     objectFit: "contain",
                   }}
                 />

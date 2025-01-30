@@ -1,3 +1,4 @@
+"use client";
 import { Box, Button, Divider, Typography } from "@mui/material";
 import Link from "next/link";
 import React from "react";
@@ -46,8 +47,22 @@ export default function IntroBanner() {
           >
             <Button className="btn-contact">INSTAGRAM</Button>
           </Link>
-          /<Button className="btn-contact">TWITTER</Button>/
-          <Button className="btn-contact">EMAIL</Button>
+          <Link
+            href="https://github.com/ThakurParam?tab=repositories"
+            target="_blank"
+            underline="none"
+          >
+            /<Button className="btn-contact">GITHUB</Button>
+          </Link>
+          /
+          <Button
+            className="btn-contact"
+            onClick={() =>
+              (window.location.href = "mailto:jeetparamthakur@gmail.com")
+            }
+          >
+            EMAIL
+          </Button>
         </Box>
       </Box>
     </Box>

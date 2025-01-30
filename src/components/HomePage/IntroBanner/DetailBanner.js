@@ -1,6 +1,7 @@
 "use client";
 import { Box, Grid, keyframes, Stack, Typography } from "@mui/material";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function DetailBanner() {
@@ -52,29 +53,32 @@ export default function DetailBanner() {
         </Grid>
         <Grid item xs={12} md={4}>
           <Box>
-            <Box
-              sx={{
-                height: 120,
-                width: 120,
-                border: "2px solid white",
-                borderRadius: 20,
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                my: { md: "60%", xs: "30%" },
-                mx: { md: "20%", xs: "auto" },
-              }}
-            >
-              <Stack>
-                <Typography variant="p" fontSize={"14px"}>
-                  LEARN{" "}
-                </Typography>
-                <Typography variant="p" fontSize={"14px"} ml={2}>
-                  {" "}
-                  MORE
-                </Typography>
-              </Stack>
-            </Box>
+            <Link href={"/about"}>
+              <Box
+                sx={{
+                  height: 120,
+                  width: 120,
+                  border: "2px solid white",
+                  borderRadius: 20,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  my: { md: "60%", xs: "30%" },
+                  mx: { md: "20%", xs: "auto" },
+                  cursor: "pointer",
+                }}
+              >
+                <Stack>
+                  <Typography variant="p" fontSize={"14px"}>
+                    LEARN{" "}
+                  </Typography>
+                  <Typography variant="p" fontSize={"14px"} ml={2}>
+                    {" "}
+                    MORE
+                  </Typography>
+                </Stack>
+              </Box>
+            </Link>
           </Box>
         </Grid>
       </Grid>

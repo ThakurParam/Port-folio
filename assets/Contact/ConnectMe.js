@@ -50,29 +50,35 @@ export default function ConnectMe() {
             <Typography variant="p" className="heading">
               LET US CONNECT !{" "}
             </Typography>
-            <Box
-              sx={{
-                height: 120,
-                width: 120,
-                borderRadius: 50,
-                border: "1px solid #8A8A8A",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                mx: "auto",
-                mt: 4,
-              }}
-              onMouseEnter={() => setHover(true)}
-              onMouseLeave={() => setHover(false)}
-            >
-              {hover ? (
-                <ArrowOutward fontSize="large" /> // Replace with the actual icon you want to use
-              ) : (
-                <Typography variant="body1" width={"50%"} textAlign={"center"}>
-                  Write Message
-                </Typography>
-              )}
-            </Box>
+            <Link href={"/contact"}>
+              <Box
+                sx={{
+                  height: 120,
+                  width: 120,
+                  borderRadius: 50,
+                  border: "1px solid #8A8A8A",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  mx: "auto",
+                  mt: 4,
+                }}
+                onMouseEnter={() => setHover(true)}
+                onMouseLeave={() => setHover(false)}
+              >
+                {hover ? (
+                  <ArrowOutward fontSize="large" />
+                ) : (
+                  <Typography
+                    variant="body1"
+                    width={"50%"}
+                    textAlign={"center"}
+                  >
+                    Write Message
+                  </Typography>
+                )}
+              </Box>
+            </Link>
           </Stack>
         </Box>
       </Box>
