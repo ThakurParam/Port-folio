@@ -1,6 +1,7 @@
 "use client";
 import { ArrowOutward } from "@mui/icons-material";
 import { Box, Container, Stack, Typography } from "@mui/material";
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function Foot() {
@@ -28,29 +29,35 @@ export default function Foot() {
               Got a Project in Mind?
             </Typography>
             <Typography variant="h1"> Let&apos;s Connect</Typography>
-            <Box
-              sx={{
-                height: 120,
-                width: 120,
-                borderRadius: 50,
-                border: "1px solid #8A8A8A",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                mx: "auto",
-                mt: 4,
-              }}
-              onMouseEnter={() => setHover(true)}
-              onMouseLeave={() => setHover(false)}
-            >
-              {hover ? (
-                <ArrowOutward fontSize="large" />
-              ) : (
-                <Typography variant="body1" width={"50%"} textAlign={"center"}>
-                  Write Message
-                </Typography>
-              )}
-            </Box>
+            <Link href={"/contact"}>
+              <Box
+                sx={{
+                  height: 120,
+                  width: 120,
+                  borderRadius: 50,
+                  border: "1px solid #8A8A8A",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  mx: "auto",
+                  mt: 4,
+                }}
+                onMouseEnter={() => setHover(true)}
+                onMouseLeave={() => setHover(false)}
+              >
+                {hover ? (
+                  <ArrowOutward fontSize="large" />
+                ) : (
+                  <Typography
+                    variant="body1"
+                    width={"50%"}
+                    textAlign={"center"}
+                  >
+                    Write Message
+                  </Typography>
+                )}
+              </Box>
+            </Link>
           </Stack>
         </Box>
       </Container>
