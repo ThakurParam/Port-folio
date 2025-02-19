@@ -2,6 +2,14 @@
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
 let theme = createTheme({
+  palette: {
+    background: {
+      default: "#000000",
+    },
+    text: {
+      primary: "#FFFFFF",
+    },
+  },
   typography: {
     fontFamily: "Montserrat",
     h1: {
