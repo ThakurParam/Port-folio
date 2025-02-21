@@ -46,7 +46,7 @@ export default function Header() {
           fontWeight={500}
           className="name"
         >
-          Paramjeet S.
+          Paramjeet
         </Typography>
       </Link>
       <Box display={"flex"} alignItems={"center"}>
